@@ -30,13 +30,13 @@ $(function() {
             expect(allFeeds[x].url).toBeDefined();
             expect(allFeeds[x].url.length).not.toBe(0);
 
-        };
+        }
         });
         it('name exists',function(){
             for(var x = 0;x<allFeeds.length;x++){
             expect(allFeeds[x].name).toBeDefined();
             expect(allFeeds[x].name.length).not.toBe(0);
-        };
+        }
         });
 
         /* TODO: Write a test that loops through each feed
@@ -98,12 +98,6 @@ $(function() {
          */
 describe('new Feed Selection',function(){
         var x,y;
-        /*beforeEach(function(done){
-            loadFeed(0,function(){
-                x = $('.feed').html();
-                done();
-            });
-        });*/
         it('load changes',function(done){
                 loadFeed(0,function(){
                 x = $('.feed').html();
